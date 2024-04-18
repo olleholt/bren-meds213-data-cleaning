@@ -139,7 +139,7 @@ No negative value detected ✅
 Let's write the presence table to a csv file:
 
 ```{r}
-write_csv(snowsurvey_fixed, file.path(datadir_processed, "water_cover.csv"))
+#write_csv(snowsurvey_fixed, file.path(datadir_processed, "water_cover.csv"))
 ```
 
 
@@ -271,7 +271,7 @@ Let's write the presence table to a csv file:
 
 ```{r}
 #write for new dataframe with cleaned land cover values
-write_csv(snowsurvey_fixed, file.path(datadir_processed, "land_cover.csv"))
+#write_csv(snowsurvey_fixed, file.path(datadir_processed, "land_cover.csv"))
 ```
 
 # _____________________________________________________________________________________________________
@@ -305,14 +305,14 @@ snowsurvey_fixed <- snowsurvey_fixed %>%
   filter(!is.na(Total_cover))
 
 # If you want to view the resulting dataframe
-View(snowsurvey_fixed)
+#View(snowsurvey_fixed)
 
 
 ```
 
 ```{r}
 #write for new dataframe with cleaned land cover values
-write_csv(snowsurvey_fixed, file.path(datadir_processed, "total_cover.csv"))
+write_csv(snowsurvey_fixed, file.path(datadir_processed, "all_cover_fixed_oliviaholt.csv"))
 ```
 
 
